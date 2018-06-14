@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+    <style name="slideAnim" parent="AppTheme">
+        <item name="android:windowEnterTransition">@transition/slide_bottom</item>
+        <item name="android:windowExitTransition">@transition/slide_bottom</item>
+    </style>
+
+    <style name="explodeAnim" parent="AppTheme">
+        <item name="android:windowEnterTransition">@transition/explode_transition</item>
+        <item name="android:windowExitTransition">@transition/explode_transition</item>
+    </style>
+
+</resources>

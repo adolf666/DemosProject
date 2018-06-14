@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".transition.TransitionDelayActivity">
+
+    <RelativeLayout
+        android:id="@+id/mSceneRootLayout"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/mTopLeftIV"
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <ImageView
+            android:id="@+id/mTopRightIV"
+            android:layout_toRightOf="@id/mTopLeftIV"
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <ImageView
+            android:id="@+id/mLeftBottomIv"
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_below="@id/mTopLeftIV"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <ImageView
+            android:id="@+id/mRightBottomIv"
+            android:layout_toRightOf="@id/mLeftBottomIv"
+            android:layout_below="@id/mTopLeftIV"
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
