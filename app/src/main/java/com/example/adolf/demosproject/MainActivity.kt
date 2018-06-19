@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         mAnimLayout.setOnClickListener { goToLayoutAnim() }
         mDelayTransition.setOnClickListener { goToDelayTransitionActivity() }
         mClipBoundTransition.setOnClickListener { goToClipBoundActivity() }
+        mShareElementTransition.setOnClickListener { goToSharedElementActivity() }
 
     }
 
@@ -45,5 +46,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun goToClipBoundActivity(){
         startActivity<TransitionChangBoundsActivity>()
+    }
+
+    private fun goToSharedElementActivity(){
+        startActivity<SharedElementActivity>()
     }
 }

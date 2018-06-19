@@ -25,7 +25,8 @@
             android:theme="@style/explodeAnim" />
         <activity android:name=".transition.LayoutTransitionActivity" />
         <activity android:name=".transition.TransitionDelayActivity" />
-        <activity android:name=".transition.TransitionChangBoundsActivity"></activity>
+        <activity android:name=".transition.TransitionChangBoundsActivity" />
+        <activity android:name=".transition.SharedElementActivity"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+<fade android:duration="500">
+    <targets>
+        <target android:targetId="@+id/mHeadIv"/>
+    </targets>
+</fade>
+    <slide android:duration="500"
+        android:startDelay="200">
+        <targets>
+            <target android:targetId="@+id/iv1"/>
+            <target android:targetId="@+id/iv2"/>
+        </targets>
+    </slide>
+    <slide android:startDelay="300"
+        android:duration="600"
+        android:slideEdge="left">
+        <targets>
+            <target android:targetId="@+id/tv1"/>
+        </targets>
+    </slide>
+</transitionSet>

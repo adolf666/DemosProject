@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".transition.SharedElementActivity">
+
+    <ImageView
+        android:id="@+id/mHeadIv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@mipmap/icon0"
+        android:scaleType="fitXY"/>
+    <View
+        android:id="@+id/mSpace"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"
+        android:layout_below="@+id/mHeadIv"/>
+
+<LinearLayout
+    android:id="@+id/mSmallLayout"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:layout_below="@+id/mSpace"
+    android:gravity="center"
+    android:layout_marginTop="20dp">
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="99dp"
+        android:layout_height="99dp"
+        android:src="@mipmap/icon2"/>
+    <ImageView
+        android:id="@+id/iv2"
+        android:layout_width="99dp"
+        android:layout_height="99dp"
+        android:layout_marginLeft="20dp"
+        android:src="@mipmap/icon3"/>
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试从左边滑入的文字效果"
+        android:layout_below="@+id/mSmallLayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="17sp"/>
+
+
+</RelativeLayout>
