@@ -11,6 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:src="@mipmap/icon0"
+        android:transitionName="share"
+        android:alpha="0.5"
         android:scaleType="fitXY"/>
     <View
         android:id="@+id/mSpace"
@@ -19,12 +21,17 @@
         android:background="@color/colorAccent"
         android:layout_below="@+id/mHeadIv"/>
 
+    <RelativeLayout
+        android:id="@+id/slideLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mSpace">
+
 <LinearLayout
     android:id="@+id/mSmallLayout"
     android:layout_width="match_parent"
     android:layout_height="100dp"
     android:orientation="horizontal"
-    android:layout_below="@+id/mSpace"
     android:gravity="center"
     android:layout_marginTop="20dp">
     <ImageView
@@ -51,5 +58,18 @@
         android:layout_marginLeft="15dp"
         android:textSize="17sp"/>
 
+        <ImageView
+            android:id="@+id/fadeIv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/tv1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_launcher_round"
+            android:alpha="0"
+            android:scaleX="0"
+            android:scaleY="0"
+            />
 
+    </RelativeLayout>
 </RelativeLayout>

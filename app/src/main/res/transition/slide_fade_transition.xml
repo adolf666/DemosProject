@@ -6,13 +6,13 @@
     </targets>
 </fade>
     <slide android:duration="500"
-        android:startDelay="200">
+        android:startDelay="100">
         <targets>
             <target android:targetId="@+id/iv1"/>
             <target android:targetId="@+id/iv2"/>
         </targets>
     </slide>
-    <slide android:startDelay="300"
+    <slide android:startDelay="200"
         android:duration="600"
         android:slideEdge="left">
         <targets>

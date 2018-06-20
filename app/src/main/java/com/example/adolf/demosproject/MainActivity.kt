@@ -49,6 +49,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun goToSharedElementActivity(){
-        startActivity<SharedElementActivity>()
+        val intent = Intent(this,SharedElementActivity::class.java)
+        val options = ActivityOptions.makeSceneTransitionAnimation(this,shareImg,"share").toBundle()
+        startActivity(intent,options)
     }
 }

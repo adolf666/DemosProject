@@ -63,14 +63,30 @@
             android:layout_marginTop="15dp"
             android:text="ClipBoundTransition" />
 
-        <Button
+        <LinearLayout
             android:id="@+id/mShareElementTransition"
             android:layout_width="match_parent"
             android:layout_height="55dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginRight="17dp"
+            android:layout_marginLeft="17dp"
             android:layout_marginTop="15dp"
-            android:text="ShareElementTransition" />
+            android:background="#FF0000">
+            <ImageView
+                android:id="@+id/shareImg"
+                android:layout_width="88dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon0" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center"
+
+                android:text="ShareElementTransition" />
+        </LinearLayout>
+
+
 
     </LinearLayout>
 </ScrollView>
