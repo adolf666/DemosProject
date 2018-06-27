@@ -4,6 +4,7 @@ import android.app.ActivityOptions
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.adolf.demosproject.spring.SpringAnimActivity
 import com.example.adolf.demosproject.transition.*
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.startActivity
@@ -20,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         mDelayTransition.setOnClickListener { goToDelayTransitionActivity() }
         mClipBoundTransition.setOnClickListener { goToClipBoundActivity() }
         mShareElementTransition.setOnClickListener { goToSharedElementActivity() }
+        mSpringAnimBtn.setOnClickListener { goToSpringAnimActivity() }
 
     }
 
@@ -52,5 +54,9 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this,SharedElementActivity::class.java)
         val options = ActivityOptions.makeSceneTransitionAnimation(this,shareImg,"share").toBundle()
         startActivity(intent,options)
+    }
+
+    private fun goToSpringAnimActivity(){
+        startActivity<SpringAnimActivity>()
     }
 }
