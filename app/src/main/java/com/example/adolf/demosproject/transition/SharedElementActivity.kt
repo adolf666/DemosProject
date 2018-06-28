@@ -19,6 +19,7 @@ class SharedElementActivity : AppCompatActivity() {
         initEnterTransition()
         initSharedElementEnterTransition()
         initReturnTransition()
+        slideLayout.isTransitionGroup = false
     }
 
     private fun initEnterTransition(){
@@ -60,7 +61,7 @@ class SharedElementActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        if (!slideLayout.isTransitionGroup) slideLayout.isTransitionGroup = true
+        slideLayout.isTransitionGroup = true
         super.onBackPressed()
         finishAfterTransition()
     }

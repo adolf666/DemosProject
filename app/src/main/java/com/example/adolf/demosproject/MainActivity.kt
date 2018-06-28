@@ -4,6 +4,9 @@ import android.app.ActivityOptions
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.transition.Fade
+import android.transition.Slide
+import android.transition.TransitionInflater
 import com.example.adolf.demosproject.spring.SpringAnimActivity
 import com.example.adolf.demosproject.transition.*
 import kotlinx.android.synthetic.main.activity_main.*
@@ -13,6 +16,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        var transition = TransitionInflater.from(this).inflateTransition(R.transition.main_exit_transition)
+        window.exitTransition = transition
         setContentView(R.layout.activity_main)
         mMyScrollView.setOnClickListener { goToScrollViewActivity() }
         mActivityAnim.setOnClickListener { goToActivityAnim() }

@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
-    android:duration="700">
+    android:duration="400">
     <fade android:fadingMode="fade_out">
         <targets>
             <target android:targetId="@+id/slideLayout"/>
         </targets>
     </fade>
+    <slide android:slideEdge="bottom"
+        android:duration="400">
+        <targets>
+            <target android:targetId="@+id/slideLayout"/>
+        </targets>
+    </slide>
 
 </transitionSet>
