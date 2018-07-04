@@ -27,7 +27,8 @@
         <activity android:name=".transition.TransitionDelayActivity" />
         <activity android:name=".transition.TransitionChangBoundsActivity" />
         <activity android:name=".transition.SharedElementActivity" />
-        <activity android:name=".spring.SpringAnimActivity"></activity>
+        <activity android:name=".spring.SpringAnimActivity" />
+        <activity android:name=".picture.PictureSelectActivity"></activity>
     </application>
 
 </manifest>

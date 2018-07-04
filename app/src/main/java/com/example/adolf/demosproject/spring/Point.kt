@@ -22,11 +22,16 @@ class Point :View{
 
     constructor(context : Context) : super(context,null)
     constructor(context: Context,attributeSet: AttributeSet) :super(context,attributeSet){
+        Log.i("TTTT","constructor")
         with(mPaint){
             color = Color.RED
             isAntiAlias = true
             style = Paint.Style.FILL
         }
+    }
+
+    init {
+        Log.i("TTTT","init")
     }
 
     override fun onTouchEvent(event: MotionEvent): Boolean {

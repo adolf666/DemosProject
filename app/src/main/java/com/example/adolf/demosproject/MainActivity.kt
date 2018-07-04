@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.transition.Fade
 import android.transition.Slide
 import android.transition.TransitionInflater
+import com.example.adolf.demosproject.picture.PictureSelectActivity
 import com.example.adolf.demosproject.spring.SpringAnimActivity
 import com.example.adolf.demosproject.transition.*
 import kotlinx.android.synthetic.main.activity_main.*
@@ -27,6 +28,7 @@ class MainActivity : AppCompatActivity() {
         mClipBoundTransition.setOnClickListener { goToClipBoundActivity() }
         mShareElementTransition.setOnClickListener { goToSharedElementActivity() }
         mSpringAnimBtn.setOnClickListener { goToSpringAnimActivity() }
+        mOpenPic.setOnClickListener { goPicActivity() }
 
     }
 
@@ -63,5 +65,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun goToSpringAnimActivity(){
         startActivity<SpringAnimActivity>()
+    }
+
+    private fun goPicActivity(){
+        startActivity<PictureSelectActivity>()
     }
 }
